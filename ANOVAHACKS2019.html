@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Home | The Global Change</title>
+    <style>
+      html {overflow-y: scroll;}
+
+      nav {
+        background: linear-gradient(lightgrey, lightgrey);
+        padding: 0px 0px;
+      }
+
+      nav li {
+        display: block;
+        font-size: 30px;
+        padding: 20px;
+      }
+      h1 {
+        background: linear-gradient(0.5turn, gray, black, darkorange);
+        color: white;
+        font-size: 50px;
+        margin: auto;
+        padding: 50px;
+        text-align: center;
+      }
+
+      label {display: block;}
+
+      .trivia {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("climate-change-2254711_1920.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+      }
+
+      .trivia li {padding: 5px;}
+
+      .action {
+        background: linear-gradient(darkorange, grey);
+        padding: 30px;
+        text-align: center;
+      }
+      .action .card {
+        display: inline-block;
+        text-align: center;
+      }
+
+      .card {padding: 30px;}
+
+      .card h5 {font-size: 30px;}
+
+      .card-body {font-size: 25px;}
+      footer {
+        background-color: lightgrey;
+        padding: 30px 20px;
+      }
+      footer p {
+        display: inline;
+        padding: 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar-->
+    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="ANOVAHACKS2019.html"><strong>The Global Change &copy;</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scientificaspects.html">The Science Behind It</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+        </ul>
+      </div>
+    </nav>-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="ANOVAHACKS2019.html"><strong>The Global Change</strong></a></li>
+          <li class="nav-item"><a class="nav-link" href="scientificaspects.html">The Science Behind It</a></li>
+          <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Our world is changing — and not for the better...</h1>
+
+    <!-- Trivia Questions-->
+    <div class="trivia">
+      <h3>Test your knowledge of climate change!</h3>
+      <ol>
+        <li>What requires the most electricity?</li>
+          <label><input type="radio" name="optradio" id="button1"> Leaving a television on standby for a year</label> <!--about 230 kilowatts-->
+          <label><input type="radio" name="optradio" id="button2"> Keeping an incandescent light bulb on for 10 hours every day for a year </label> <!-- about 220 kilowatts-->
+          <label><input type="radio" name="optradio" id="button3"> Charging a laptop every day for a year</label> <!-- about 72 kilowatts-->
+          <label><input type="radio" name="optradio" id="button4"> Charging an iPhone X every day for a year</label> <!-- about 1 kilowatt-->
+          <p id="question1"></p>
+        <li>What uses the most fresh water?</li>
+          <label><input type="radio" name="optradio2" id="button5"> Watering a 10' by 20' lawn</label> <!--144 gallons-->
+          <label><input type="radio" name="optradio2" id="button6"> Producing a quarter-pound of beef</label> <!--450 gallons-->
+          <label><input type="radio" name="optradio2" id="button7"> Producing one gallon of Almond Milk</label> <!--940 gallons-->
+          <label><input type="radio" name="optradio2" id="button8"> An average length shower</label> <!-- 17.2 gallons-->
+          <p id="question2"></p>
+        <li>What is the gas that is the most harmful towards the overall environment?</li>
+          <label><input type="radio" name="optradio3" id="button9"> Methane</label>
+          <label><input type="radio" name="optradio3" id="button10"> Hydrochloric Acid</label>
+          <label><input type="radio" name="optradio3" id="button11"> Dihydrogen Monoxide</label>
+          <label><input type="radio" name="optradio3" id="button12"> Carbon Dioxide</label>
+          <p id="question3"></p>
+        <li>How much water would you save if you closed the faucet when brushing your teeth?</li>
+          <label><input type="radio" name="optradio4" id="button13"> 3,500 gallons of water/year</label>
+          <label><input type="radio" name="optradio4" id="button14"> 6,500 gallons of water/year</label>
+          <label><input type="radio" name="optradio4" id="button15"> 8,500 gallons of water/year </label><!--CORRECT ANWSER-->
+          <label><input type="radio" name="optradio4" id="button16"> 10,500 gallons of water/year</label>
+          <p id="question4"></p>
+        <li>How much plastic dumped in the ocean every year?</li>
+          <label><input type="radio" name="optradio5" id="button17"> 1 million tons </label>
+          <label><input type="radio" name="optradio5" id="button18"> 3 million tons </label>
+          <label><input type="radio" name="optradio5" id="button19"> 5 million tons </label>
+          <label><input type="radio" name="optradio5" id="button20"> 8 million tons </label> <!--CORRECT ANSWER-->
+          <p id="question5"></p>
+        <button class="btn btn-primary" onclick="checkAnswers()">How Did You Do? </button>
+      </ol>
+    </div>
+
+    <!--What Can You Do? (Action)-->
+    <h1>What YOU Can Do</h1>
+    <div class="action">
+      <div class="card" style="width: 50%;">
+        <div class="card-body">
+          <h5 class="card-title">1) Check Out The Science Behind It</h5>
+          <p class="card-text">In order to learn about how to fight global warming and climate change, it is essential to know what they are.</p>
+          <a href="scientificaspects.html">The Science Behind It</a>
+        </div>
+      </div>
+      <div class="card" style="width: 50%;">
+        <div class="card-body">
+          <h5 class="card-title">2) Take Action</h5>
+          <p class="card-text">Do something to help benefit your community! You can drive less, buy local foods, or do anything that helps the
+            environment!</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p><strong>Created by:</strong> Zander Lack, Sam Der, Christina</p>
+      <p><strong>&copy; The Global Change 2019</strong></p>
+    </footer>
+
+    <script type="text/javascript">
+      function checkAnswers() {
+        var questionList=["question1", "question2", "question3", "question4", "question5"];
+        var buttonList=["button1", "button7", "button12", "button15", "button20"];
+        for(var i=0; i<5; i++){
+          if (document.getElementById(buttonList[i]).checked == true) {
+            document.getElementById(questionList[i]).style.background = "green";
+          }
+          else {
+            document.getElementById(questionList[i]).style.background = "#b70126";
+          }
+        }
+        var explanationsList = ["Leaving a television on standby requires the most energy because larger electronics generally take more energy. "+
+        "Also, incandescent light bulbs are not very energy efficient because they consume a lot of energy and transform most of it into heat " +
+        "instead of light, which adds more heat to the overall atmosphere. FACT: Did you know that 80% of the world's energy, including yours, comes from fossil fuels?",
+        "Producing almond milk requires the most water because a lot of water is needed to grow almonds. " +
+        "Similarly cows need to be fed everyday, which requires a lot of foods that need water in order to grow. Watering a lawn once and taking a shower requires a lot less water in comparison. " +
+        "FACT: Using too much water can lead to droughts and global warming will make those droughts appear more often. These can drastically change your life.",
+        "Carbon dioxide is the most harmful gas towards the overall environment because it is one of the most abundant greenhouse gases. "+
+        "Although water vapor is also a greenhouse gas, carbon dioxide is the gas humans, including yourself, have produced. FACT: Carbon Dioxide emissions have increased by 39% since the Industrial Revolution in the 1750s.",
+        "Assuming the average person takes 2 minutes to brush their teeth and everyone brushes their teeth twice a day, over 8,500 gallons of clean water would go down the drain every year if the faucet is left on. ",
+        "8 million tons of plastic are dumped in the ocean every year. This is enough plastic to kill thousands of animals, which can have a "+
+        "drastic effect on the environment and could end up on our plates of seafood. Some animals that prevent climate change could also be "+
+        "killed by this much plastic."]
+        for (var i=0; i<5; i++){
+          document.getElementById(questionList[i]).innerHTML = explanationsList[i];
+        }
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
